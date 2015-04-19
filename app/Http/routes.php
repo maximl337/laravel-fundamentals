@@ -18,3 +18,4 @@ Route::controllers([
     
     ]);
 
+Route::get('tags/{tags}', 'TagsController@show');
