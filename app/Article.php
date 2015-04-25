@@ -56,6 +56,14 @@ class Article extends Model {
     /**
      * 
      */
+    public function FunctionName($value='')
+    {
+        # code...
+    }
+
+    /**
+     * 
+     */
     public function scopeUnpublished($query)
     {
         $query->where('published_at', '>' , Carbon::now());
